@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CareerPilot AI helps you explore jobs, prepare for interviews, and build your resume." />
+  <title>CareerPilot AI | Smart Career & Job Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="CareerPilot AI home"><span class="brand-mark">✦</span><span>CareerPilot <b>AI</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#jobs">Find Jobs</a><a href="#tools">Career Tools</a><a href="#roadmap">Career Roadmap</a>
+      <a class="nav-cta" href="#resume">Build Resume ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Your career.<br /><span>Your direction.</span></h1>
+        <p class="hero-text">Find opportunities, build a stronger resume, and prepare for your next interview — all in one place.</p>
+        <div class="hero-actions"><a class="btn primary" href="#jobs">Explore jobs <span>→</span></a><a class="btn secondary" href="#tools">Explore career tools</a></div>
+        <div class="hero-proof"><div class="avatars"><span>M</span><span>A</span><span>R</span></div><p><strong>One step at a time.</strong><br />Tools to move your career forward.</p></div>
+      </div>
+      <div class="hero-art" aria-label="Career dashboard illustration">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="dashboard-card main-card">
+          <div class="card-top"><span class="mini-icon">✦</span><span class="muted">CAREER SNAPSHOT</span><span class="dots">•••</span></div>
+          <h3>Your next opportunity is closer.</h3><p class="muted small">Keep building your momentum</p>
+          <div class="progress-row"><span>Profile readiness</span><b>72%</b></div><div class="progress"><span></span></div>
+          <div class="snapshot-grid"><div><span class="stat-icon violet">⌕</span><strong>24</strong><small>Suggested roles</small></div><div><span class="stat-icon mint">✓</span><strong>4</strong><small>Skills to build</small></div></div>
+        </div>
+        <div class="floating-card match"><span class="match-icon">✧</span><div><strong>Good match!</strong><small>Junior Web Developer</small></div><b>92%</b></div>
+        <div class="floating-card tip"><span class="tip-icon">✦</span><div><strong>Daily career tip</strong><small>Small progress adds up.</small></div></div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><span>MADE FOR YOUR NEXT MOVE</span><div><span>✳ Job discovery</span><span>✳ Resume tools</span><span>✳ Interview practice</span><span>✳ Skill planning</span></div></section>
+
+    <section class="section jobs-section" id="jobs">
+      <div class="section-heading"><div><div class="eyebrow">OPPORTUNITIES AHEAD</div><h2>Find a role that <span>fits you.</span></h2><p>Explore sample openings and discover the kind of work you want to do.</p></div><span class="section-number">01 / JOBS</span></div>
+      <div class="job-search"><span>⌕</span><input id="jobSearch" type="search" placeholder="Search job title, skill, or company..." aria-label="Search jobs"/><select id="jobType" aria-label="Filter by job type"><option value="all">All job types</option><option>Full-time</option><option>Internship</option><option>Remote</option></select><button class="btn primary" id="searchBtn">Search</button></div>
+      <div class="job-meta"><span id="jobCount">6 opportunities to explore</span><span>Sample listings for portfolio demonstration</span></div>
+      <div class="job-grid" id="jobGrid">
+        <article class="job-card" data-title="junior frontend developer" data-company="pixelworks" data-type="Full-time" data-skills="html css javascript react"><div class="job-card-head"><span class="company-logo logo-purple">P</span><button class="save-job" aria-label="Save Junior Frontend Developer" data-job="Junior Frontend Developer">♡</button></div><span class="tag">Technology</span><h3>Junior Frontend Developer</h3><p class="company">PixelWorks Studio</p><div class="job-details"><span>⌖ Bengaluru / Hybrid</span><span>◷ Full-time</span></div><div class="job-bottom"><strong>₹3.5–5 LPA</strong><button class="text-btn apply-btn" data-title="Junior Frontend Developer">View role ↗</button></div></article>
+        <article class="job-card" data-title="hr recruitment intern" data-company="peoplefirst" data-type="Internship" data-skills="communication recruitment excel people"><div class="job-card-head"><span class="company-logo logo-orange">P</span><button class="save-job" aria-label="Save HR & Recruitment Intern" data-job="HR & Recruitment Intern">♡</button></div><span class="tag orange">People & Culture</span><h3>HR & Recruitment Intern</h3><p class="company">PeopleFirst</p><div class="job-details"><span>⌖ Bengaluru</span><span>◷ Internship</span></div><div class="job-bottom"><strong>₹12k–18k / mo</strong><button class="text-btn apply-btn" data-title="HR & Recruitment Intern">View role ↗</button></div></article>
+        <article class="job-card" data-title="data analyst trainee" data-company="northstar labs" data-type="Full-time" data-skills="sql excel python data"><div class="job-card-head"><span class="company-logo logo-blue">N</span><button class="save-job" aria-label="Save Data Analyst Trainee" data-job="Data Analyst Trainee">♡</button></div><span class="tag blue">Data & Analytics</span><h3>Data Analyst Trainee</h3><p class="company">Northstar Labs</p><div class="job-details"><span>⌖ Remote</span><span>◷ Full-time</span></div><div class="job-bottom"><strong>₹3–4.5 LPA</strong><button class="text-btn apply-btn" data-title="Data Analyst Trainee">View role ↗</button></div></article>
+        <article class="job-card" data-title="it support associate" data-company="cloudbridge" data-type="Full-time" data-skills="troubleshooting windows networking communication"><div class="job-card-head"><span class="company-logo logo-green">C</span><button class="save-job" aria-label="Save IT Support Associate" data-job="IT Support Associate">♡</button></div><span class="tag green">IT Operations</span><h3>IT Support Associate</h3><p class="company">CloudBridge Services</p><div class="job-details"><span>⌖ Mysuru</span><span>◷ Full-time</span></div><div class="job-bottom"><strong>₹2.8–4 LPA</strong><button class="text-btn apply-btn" data-title="IT Support Associate">View role ↗</button></div></article>
+        <article class="job-card" data-title="ui ux design intern" data-company="formandfunction" data-type="Internship" data-skills="figma design research prototype"><div class="job-card-head"><span class="company-logo logo-pink">F</span><button class="save-job" aria-label="Save UI/UX Design Intern" data-job="UI/UX Design Intern">♡</button></div><span class="tag pink">Design</span><h3>UI/UX Design Intern</h3><p class="company">Form & Function</p><div class="job-details"><span>⌖ Remote</span><span>◷ Internship</span></div><div class="job-bottom"><strong>₹10k–15k / mo</strong><button class="text-btn apply-btn" data-title="UI/UX Design Intern">View role ↗</button></div></article>
+        <article class="job-card" data-title="customer success associate" data-company="brightdesk" data-type="Remote" data-skills="communication support crm problem solving"><div class="job-card-head"><span class="company-logo logo-yellow">B</span><button class="save-job" aria-label="Save Customer Success Associate" data-job="Customer Success Associate">♡</button></div><span class="tag yellow">Customer Experience</span><h3>Customer Success Associate</h3><p class="company">BrightDesk</p><div class="job-details"><span>⌖ Remote</span><span>◷ Remote</span></div><div class="job-bottom"><strong>₹3–4 LPA</strong><button class="text-btn apply-btn" data-title="Customer Success Associate">View role ↗</button></div></article>
+      </div>
+      <div class="empty-state" id="emptyJobs" hidden>No matching sample roles. Try a different keyword or filter.</div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="section-heading"><div><div class="eyebrow">YOUR CAREER TOOLKIT</div><h2>Build confidence, <span>one tool at a time.</span></h2><p>Simple, practical tools to help you prepare for the next step.</p></div><span class="section-number">02 / TOOLS</span></div>
+      <div class="tool-grid">
+        <article class="tool-card" id="resume"><div class="tool-icon resume-icon">▤</div><span class="tool-label">TOOL 01</span><h3>Resume starter</h3><p>Enter your details and create a clean, downloadable resume draft.</p><button class="btn dark" id="openResume">Build my resume ↗</button></article>
+        <article class="tool-card"><div class="tool-icon interview-icon">✧</div><span class="tool-label">TOOL 02</span><h3>Interview practice</h3><p>Practice common interview questions and build clearer answers.</p><button class="btn dark" id="newQuestion">Get a question ↗</button><div class="question-box" id="questionBox" hidden><small>TRY THIS QUESTION</small><p id="questionText"></p><button class="text-btn" id="anotherQuestion">Another question ↻</button></div></article>
+        <article class="tool-card"><div class="tool-icon skills-icon">⌁</div><span class="tool-label">TOOL 03</span><h3>Skill planner</h3><p>Choose a career area and see a practical list of skills to work on.</p><label class="sr-only" for="careerTrack">Career area</label><select id="careerTrack" class="full-select"><option value="web">Web development</option><option value="hr">HR & recruitment</option><option value="data">Data analytics</option><option value="support">IT support</option></select><button class="btn dark" id="showSkills">Show my skills ↗</button><ul class="skill-list" id="skillList" hidden></ul></article>
+      </div>
+    </section>
+
+    <section class="roadmap-section" id="roadmap"><div class="roadmap-inner"><div><div class="eyebrow light-eyebrow">A PLAN THAT MOVES WITH YOU</div><h2>Small steps.<br /><span>Real progress.</span></h2><p>You don't need to have everything figured out today. Start with a goal, build a skill, and take the next step.</p><a class="btn light-btn" href="#tools">Start planning ↗</a></div><div class="roadmap-list"><div class="roadmap-step"><span>01</span><div><strong>Know your direction</strong><p>Explore roles that match your interests.</p></div><span class="step-check">✓</span></div><div class="roadmap-step"><span>02</span><div><strong>Build your foundation</strong><p>Practice skills and create small projects.</p></div><span class="step-check">✓</span></div><div class="roadmap-step"><span>03</span><div><strong>Prepare your profile</strong><p>Polish your resume and interview answers.</p></div><span class="step-check">✓</span></div><div class="roadmap-step"><span>04</span><div><strong>Apply and learn</strong><p>Apply thoughtfully and learn from feedback.</p></div><span class="step-check">↗</span></div></div></div></section>
+
+    <section class="closing-cta"><div class="closing-spark">✦</div><h2>Your next chapter starts<br />with <span>one small step.</span></h2><p>Choose a tool, explore a role, and keep moving forward.</p><a class="btn primary" href="#jobs">Explore opportunities ↗</a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>CareerPilot <b>AI</b></span></a><p>© 2026 CareerPilot AI · Portfolio demo project</p><a href="#home">Back to top ↑</a></footer>
+
+  <dialog id="roleDialog" class="modal"><button class="modal-close" id="closeRole" aria-label="Close">×</button><div class="eyebrow">ROLE DETAILS · SAMPLE</div><h2 id="roleTitle">Job title</h2><p id="roleDescription"></p><p class="demo-note">This is a demonstration listing. No real application is submitted.</p><button class="btn primary" id="closeRole2">Got it</button></dialog>
+  <dialog id="resumeDialog" class="modal resume-modal"><button class="modal-close" id="closeResume" aria-label="Close">×</button><div class="eyebrow">RESUME STARTER</div><h2>Create your resume draft</h2><p class="muted">Fill in what you know. You can improve it later.</p><form id="resumeForm"><label>Full name<input id="fullName" required placeholder="Your name" /></label><label>Email<input id="email" type="email" required placeholder="you@example.com" /></label><label>Target role<input id="targetRole" required placeholder="e.g. HR Associate" /></label><label>Skills (comma separated)<input id="resumeSkills" placeholder="Communication, Excel, HTML" /></label><label>About you<textarea id="aboutYou" rows="3" placeholder="A short introduction about your education and goals"></textarea></label><button class="btn primary" type="submit">Download resume draft ↓</button></form></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
